@@ -6,24 +6,22 @@
 <link rel="stylesheet" href="style.css" type="text/css" media="all">
 
 <body>
-
+  <a href="#main" class="skip">Skip to Main</a>
   <header>
     <div class="container">
       <span>Student's <h2>site</h2></span>
-      <!-- <h4>Move forward <span>with your education</span></h4> -->
-      <!-- <h2 class="header1">move forward</h2><span>
-        <h2 class="header2">with your education</h2> -->
+    
       </span>
       <nav>
         <ul>
-          <li class="current"><a href="index.html">Home Page</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Our Articles</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li class="last"><a href="#" class="m5">Sitemap</a></li>
+          <li aria-selected="true" class="current"><a data-toggle="tab" href="index.html">Home Page</a></li>
+          <li aria-selected="false"><a data-toggle="tab" href="#">About Us</a></li>
+          <li aria-selected="false"><a data-toggle="tab" href="#">Our Articles</a></li>
+          <li aria-selected="false"><a data-toggle="tab" href="#">Contact Us</a></li>
+          <li aria-selected="false" class="last"><a data-toggle="tab" href="#" class="m5">Sitemap</a></li>
         </ul>
       </nav>
-      <form action="#" id="search-form">
+      <form role="search" action="#" id="search-form">
         <fieldset>
           <div class="search_bar">
             <input type="text">
@@ -33,71 +31,83 @@
     </div>
   </header>
   <div class="container">
-    <aside>
-      <h3>Categories</h3>
-      <ul class="categories">
-        <li><span><a href="#">Programs</a></span></li>
-        <li><span><a href="#">Student Info</a></span></li>
-        <li><span><a href="#">Teachers</a></span></li>
-        <li><span><a href="#">Descriptions</a></span></li>
-        <li><span><a href="#">Administrators</a></span></li>
-        <li><span><a href="#">Basic Information</a></span></li>
-        <li><span><a href="#">Vacancies</a></span></li>
-        <li class="last"><span><a href="#">Calendar</a></span></li>
-      </ul>
-      <form action="#" class="newsletter">
-        <fieldset>
-          
-            <h2>Newsletter</h2>
-            <input type="email" aria-placeholder="Enter Your Email Here">
-            <div class="clear"><a href="#" class="submit_btn">Submit</a></div>
-         
-        </fieldset>
-      </form>
-      <h2>Fresh <span>News</span></h2>
-     <strong>June 30, 2010</strong>
-    </aside>
-    <section id="content">
-      <div class="banner">
-        <h2>Professional <span>Online Education <span>Since 1992</span></span></h2>
-      </div>
-
-      <h2>About <span>Team</span></h2>
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <img src="images/img1.jpg" alt="Jane" style="width:100%">
-            <div class="container">
-             <h4>Team Member One</h4>
-              <p>Some text that describes me.</p>
-              <p>example@example.com</p>
+    <main id="main">
+        <aside>
+            <h3>Categories</h3>
+            <ul class="categories">
+              <li><span><a href="#">Programs</a></span></li>
+              <li><span><a href="#">Student Info</a></span></li>
+              <li><span><a href="#">Teachers</a></span></li>
+              <li><span><a href="#">Descriptions</a></span></li>
+              <li><span><a href="#">Administrators</a></span></li>
+              <li><span><a href="#">Basic Information</a></span></li>
+              <li><span><a href="#">Vacancies</a></span></li>
+              <li class="last"><span><a href="#">Calendar</a></span></li>
+            </ul>
+            <form action="#" class="newsletter">
+              <fieldset>
+                
+                  <h2>Newsletter</h2>
+                  
+                  <input id="email" type="email" placeholder="Enter Your Email Here">
+                  <a class="News-a" href="#">Unsubscribe</a>
+                  <div class="clear"><a href="#" class="submit_btn">Submit</a></div>
+               
+              </fieldset>
+            </form>
+            <h2>Fresh <span>News</span></h2>
+           <strong>June 30, 2010</strong>
+          </aside>
+          <section id="content">
+            <div class="banner">
+              
             </div>
-          </div>
-        </div>
       
-        <div class="column">
-          <div class="card">
-            <img src="images/img1.jpg" alt="Mike" style="width:100%">
-            <div class="container">
-                <h4>Another Team Member</h4>
-              <p>Some text that describes me.</p>
-              <p>example@example.com</p>
+            <h2>About <span>Team</span></h2>
+            <div class="row">
+              <div class="column">
+                <div class="card">
+                  <img src="images/one.PNG" alt="Jane" style="width:100%">
+                  <div class="container">
+                   <h4>Team Member One</h4>
+                    <p>Some text that describes me.</p>
+                    <p>example@example.com</p>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="column">
+                <div class="card">
+                  <img src="images/two.PNG" alt="Mike" style="width:100%">
+                  <div class="container">
+                      <h4>Another Team Member</h4>
+                    <p>Some text that describes me.</p>
+                    <p>example@example.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <img src="images/three.PNG" alt="John" style="width:100%">
+                  <div class="container">
+                      <h4>Another Team Member</h4>
+                    <p>Some text that describes me.</p>
+                    <p>example@example.com</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="card">
-            <img src="images/img1.jpg" alt="John" style="width:100%">
-            <div class="container">
-                <h4>Another Team Member</h4>
-              <p>Some text that describes me.</p>
-              <p>example@example.com</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          </section>
+    </main>
+    
   </div>
 
 </body>
 </html>
+
+
+
+<li aria-selected="false"><a data-toggle="tab" href="#contactus" title="Contact Us">CONTACT US</a></li>
+<li aria-selected="false"><a data-toggle="tab" href="#sitemap" title="Site Map">SITE MAP</a></li>
+</ul> 
+</div>  

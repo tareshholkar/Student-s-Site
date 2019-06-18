@@ -111,6 +111,7 @@ p {
 	width:691px;
 	height:299px;
 	background:url(images/banner.png) no-repeat left top;
+	background-size: 693px 300px;
 }
 .banner h2 {
 	color:#fff;
@@ -192,6 +193,7 @@ h4 {
 	font-size:1em;
 	color:#008cc4;
 	margin-bottom:5px;
+	margin-top: 40px;
 }
 h4 a {
 	color:#008cc4;
@@ -275,9 +277,7 @@ header nav ul li a.m5 {
 #search-form a:hover {
 	background-color:#47b6e5;
 }
-.newsletter {
-	padding-bottom:45px;
-}
+
 .newsletter fieldset {
 	background-color: #008cc4;
 	width:219px;
@@ -309,6 +309,7 @@ header nav ul li a.m5 {
 	text-decoration:none;
 	background-color:#006caa;
 	padding:2px 11px 3px 11px;
+	margin-top: -18px;
 }
 .newsletter a.submit_btn:hover {
 	border-color:#fff;
@@ -352,3 +353,11 @@ a {
   
   
  
+.News-a{
+	display: inline-block;
+	color: white;
+}
+
+.main{
+	
+}
